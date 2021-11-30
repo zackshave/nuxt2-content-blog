@@ -1,0 +1,98 @@
+// Colors
+:root {
+  // Light theme
+  ---accent: #6796E6;
+  ---background: #fff;
+  ---backgroundSecondary: #eee;
+  ---text: #111;
+  ---textSecondary: #444;
+  ---logo: '𝔃𝓪𝓬𝓴 𝓼𝓱𝓪𝓿𝓮 . 𝓭𝓮𝓿';
+
+  @media (prefers-color-scheme: dark) {
+    // Dark theme
+    ---background: #111;
+    ---backgroundSecondary: #222;
+    ---text: #fff;
+    ---textSecondary: #ccc;
+  }
+}
+
+// Utilities
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+// Typography
+
+body {
+  background-color: var(---background);
+  color: var(---text);
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: clamp(0.75rem, -0.875rem + 4.333vw, 1rem);
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: var(---accent);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h6 {
+  color: var(---textSecondary);
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: clamp(1.5rem, -0.875rem + 4.333vw, 2rem);
+  margin: 0 0 22px 0;
+}
+
+h2 {
+  font-size: clamp(1.25rem, -0.875rem + 4.333vw, 1.75rem);
+  margin: 0 0 22px 0;
+}
+
+h3 {
+  font-size: clamp(1.125rem, -0.875rem + 4.333vw, 1.25rem);
+  margin: 0 0 22px 0;
+}
+
+// Layout
+
+html {
+  accent-color: var(---accent);
+}
+
+.layout-container {
+  margin: 0 auto;
+  max-width: 888px;
+  padding: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 888px;
+}
+
+// Images
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+picture.hero img {
+  width: 100%;
+  margin-bottom: 32px;
+}
