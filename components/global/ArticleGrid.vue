@@ -1,15 +1,15 @@
 <template>
   <div>
-    <ul class="grid">
+    <ul class="scroll-grid">
       <li v-for="article of articles" :key="article.slug">
-        <article>
+        <article v-if="article.image">
           <h3>
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">{{ article.title }}</NuxtLink>
           </h3>
           <nuxt-picture
-            v-if="article.img"
+            v-if="article.image"
             provider="cloudinary" 
-            :src="article.img" 
+            :src="article.image" 
             fit="cropping" 
             width="1000" 
             height="1000"

@@ -3,9 +3,9 @@
     <div class="grid">
       <div class="article__image">
         <nuxt-picture
-          v-if="article.img"
+          v-if="article.image"
           provider="cloudinary" 
-          :src="article.img" 
+          :src="article.image" 
           fit="cropping" 
           width="600" 
           height="600" 

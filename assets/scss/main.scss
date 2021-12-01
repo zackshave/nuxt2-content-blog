@@ -57,21 +57,19 @@ h1, h2, h3, h4, h6 {
   font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid serif, Times, Source serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-weight: 600;
   letter-spacing: 1px;
+  margin: 0 0 16px 0;
 }
 
 h1 {
   font-size: clamp(1.5rem, -0.875rem + 4.333vw, 2rem);
-  margin: 0 0 22px 0;
 }
 
 h2 {
-  font-size: clamp(1.25rem, -0.875rem + 4.333vw, 1.75rem);
-  margin: 0 0 22px 0;
+  font-size: clamp(1.25rem, -0.875rem + 4.333vw, 1.5rem);
 }
 
 h3 {
   font-size: clamp(1.125rem, -0.875rem + 4.333vw, 1.25rem);
-  margin: 0 0 16px 0;
 }
 
 // Layout
@@ -99,12 +97,38 @@ html {
   place-items: center;
 }
 
+.scroll-grid {
+  display: flex;
+  gap: 16px;
+  margin: 0 0 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  @media screen and (min-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    overflow-x: hidden;
+    place-items: center;
+    scroll-snap-type: y mandatory;
+  }
+
+  li {
+    flex: 1 0 calc(100vw - 64px);
+    scroll-snap-align: start;
+  }
+}
+
 // Images
 
 img {
   display: block;
   height: auto;
+  margin: 0 0 10px 0;
   max-width: 100%;
+}
+
+picture.hero img {
+  margin: 0 0 16px 0;
 }
 
 // Nuxt content

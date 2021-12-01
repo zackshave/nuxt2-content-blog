@@ -1,6 +1,8 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  // Fallback for Netlify static rendering
   generate: {
     fallback: true
   },
