@@ -9,7 +9,7 @@
       height="444" 
       class="hero"
     />
-    <h1>{{ page.title }}</h1>
+    <h1 v-if="page.title">{{ page.title }}</h1>
     <nuxt-content :articles="articles" :document="page" />
   </section>
 </template>
@@ -20,7 +20,7 @@ export default {
     const page = await $content(params.slug || "index").fetch();
     const articles = await $content('articles')
         .only(['title', 'description', 'img', 'slug'])
-        .sortBy('createdAt', 'asc')
+        .sortBy('createdAt', 'desc')
         .fetch()
     return { 
       page: { 

@@ -1,14 +1,21 @@
 <template>
   <div>
-    <h1>Blog Posts</h1>
-    <ul>
+    <ul class="grid">
       <li v-for="article of articles" :key="article.slug">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-          <div>
-            <h2>{{ article.title }}</h2>
-            <p>{{ article.description }}</p>
-          </div>
-        </NuxtLink>
+        <article>
+          <h3>
+            <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">{{ article.title }}</NuxtLink>
+          </h3>
+          <nuxt-picture
+            v-if="article.img"
+            provider="cloudinary" 
+            :src="article.img" 
+            fit="cropping" 
+            width="1000" 
+            height="1000"
+            alt="article.alt"
+          />
+        </article>
       </li>
     </ul>
   </div>
@@ -16,6 +23,46 @@
 
 <script>
   export default {
-    props: ['articles']
+    props: {
+      articles: {
+        type: Array,
+        default: null
+      }
+    }
   }
 </script>
+
+<style scoped lang="scss">
+  ul {
+    list-style: none;
+    margin: 32px 0;
+    padding: 0;
+
+    li {
+      article {
+        position: relative;
+
+        a {
+          align-items: center;
+          display: flex;
+          gap: 5px;
+          text-decoration: none;
+
+          &::before {
+            bottom: 0;
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+
+          &::after {
+            content: "→";
+          }
+        }
+      }
+    }
+  }
+</style>

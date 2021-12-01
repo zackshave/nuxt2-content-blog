@@ -12,7 +12,7 @@
 
   .logo {
     color: var(---text);
-    display: block;
+    display: inline-block;
     transition: color 0.25s ease;
 
     &:hover, &:active, &:focus {

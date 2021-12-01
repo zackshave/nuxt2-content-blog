@@ -1,9 +1,23 @@
 <template>
-  <article class="container">
-    <h1>{{ article.title }}</h1>
-    <p>{{ article.description }}</p>
-    <img :src="article.img" :alt="article.alt" />
-    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+  <article>
+    <div class="grid">
+      <div class="article__image">
+        <nuxt-picture
+          v-if="article.img"
+          provider="cloudinary" 
+          :src="article.img" 
+          fit="cropping" 
+          width="600" 
+          height="600" 
+          alt="article.alt"
+        />
+        <small>Article last updated: {{ formatDate(article.updatedAt) }}</small>
+      </div>
+      <div class="article__heading">
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.description }}</p>
+      </div>
+    </div>
     <nuxt-content :document="article" />
   </article>
 </template>
