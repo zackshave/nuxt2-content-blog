@@ -26,7 +26,7 @@ export default {
     const page = await $content(params.slug || "index").fetch();
     const articles = await $content('articles')
         .only(['title', 'description', 'image', 'slug'])
-        .sortBy('createdAt', 'desc')
+        .sortBy('createdAt', 'asc')
         .fetch()
     return { 
       page: { 
