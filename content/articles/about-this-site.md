@@ -11,7 +11,7 @@ This site is built with Nuxt.js, using Nuxt/Content as the content management sy
 
 ## Why?
 
-I decided to revamp my personal site last year and as a fun way to get up to speed on new React frameworks like Gatsby and Next.js. Initially I wanted to make a Gatsby site, because I love their image processing, but I found that event though I have a decent understanding of React, there were a lot of barriers to actually getting data into my components. I needed to add lots of plug-ins and configuration to get what I wanted out of it.
+I decided to revamp my personal site last year and as a fun way to get up to speed on new React frameworks like Gatsby and Next.js. Initially I wanted to make a Gatsby site, because I love their image processing, but I found that even though I have a decent understanding of React, there were a lot of barriers to actually getting data into my components. I needed to add lots of plug-ins and configuration to get what I wanted out of it.
 
 This was especially true in this particular case because I was planning on a very image heavy website, and I wanted to use Cloudinary to accomplish this without paying for extra storage on Github or Netlify. I eventually did figure out a way to combine two Cloudinary Gatsby plugins and some GraphQL mutations to get the images to work they way I wanted, but I was frustrated by the experience. I still plan to finish this project and create a photography website for myself at some point, and when I do so I'll blog about it here.
 
