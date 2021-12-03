@@ -17,4 +17,7 @@ This was especially true in this particular case because I was planning on a ver
 
 While I was working on this Gatsby project I did a few crash courses on Vue.js and instantly fell in love with it. It's just so much closer to the web development that I am used to when compared to React, but still offers incredibly powerful features in a progressively scalable way. As I got deeper into the Vue ecosystem I discovered Nuxt and it seemed like a great fit for a personal site deployed on the Jamstack.
 
+You can check the code out on Github here:
+https://github.com/zackshave/nuxt2-content-blog
+
    
