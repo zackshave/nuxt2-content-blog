@@ -44,6 +44,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://image.nuxtjs.org/
     '@nuxt/image',
+    // https://github.com/nuxt-community/netlify-files-module
+    '@nuxtjs/netlify-files'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
