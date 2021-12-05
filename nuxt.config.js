@@ -69,6 +69,13 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  pwa: {
+    manifest: {
+      lang: 'en'
+    }
+  },
+
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
