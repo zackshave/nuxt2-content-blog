@@ -44,9 +44,14 @@
 
         a {
           align-items: center;
+          color: var(---text);
           display: flex;
           gap: 5px;
           text-decoration: none;
+
+          &:hover, &:active, &:focus {
+            color: var(---accent);
+          }
 
           &::before {
             bottom: 0;

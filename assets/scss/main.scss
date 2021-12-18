@@ -44,7 +44,7 @@ p:first-child {
 }
 
 a {
-  color: var(---text);
+  color: var(---accent);
   font-weight: 400;
   text-decoration: none;
   transition: color 0.25s ease;
@@ -138,4 +138,10 @@ picture.hero img {
   a {
     text-decoration: underline;
   }
+}
+
+// Articles 
+
+.article__embed-wrapper {
+  margin-bottom: 32px;
 }
