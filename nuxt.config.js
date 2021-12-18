@@ -55,6 +55,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://github.com/dword-design/nuxt-content-git
+    'nuxt-content-git',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
