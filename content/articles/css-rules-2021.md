@@ -15,7 +15,7 @@ A big part of what inspired this article was the [State of CSS 2021](https://202
 
 ### 1) CSS Grid
 
-CSS Grid spec level 1 has been around for a while, but until recently I was one of many developers that was worried about browser support. It wasn't until I watched some [Layout Land videos with Jenn Simmons](https://www.youtube.com/c/LayoutLand) that grid was released to almost immediate full browser support in 2017. Those Layout Land videos really helped me get up to speed, as well as [CSSGrid.io](https://cssgrid.io/) from Wes Bos. 
+CSS Grid spec level 1 has been around for a while, but until recently I was worried about browser support. It wasn't until I watched some [Layout Land videos with Jenn Simmons](https://www.youtube.com/c/LayoutLand) that I learned the main features of grid were actually released to almost immediate full browser support in 2017. There was nothing to be worried about so I just dove in. Those Layout Land videos really helped me get up to speed, as well as [CSSGrid.io](https://cssgrid.io/) from Wes Bos. 
 
 I was so inspired that I ended up creating a demo app on [glitch.com](https://zshave-css-grid-complete.glitch.me/) and slideshow on [CodePen](https://codepen.io/zackshave) that I presented to my coworkers to push adoption of Grid at my current job. Check them out below:
 
@@ -56,7 +56,7 @@ With `position: sticky;` you can now accomplish this classic UI pattern with jus
 
 ### 3) Scroll Snap
 
-Scroll snap is something that I think really helps bring an app-like experience to the web. I love the new UI pattern that uses `display: flex;` and `overflow: scroll` to to simply allow items that don't fit in a container to become, allowing the user to scroll horizontally when with their thumb or mouse-wheel to access the hidden items. I think this makes so much more sense than completely changing the interface for a user between desktop and mobile devices. It's also much easier to implement for developers, and much much more performant at a time when we're all obsessing over technical SEO. Scroll snap arrived just in time to make this style of UI feel smoother and more native, and I try to use it wherever I can.  
+Scroll snap is something that I think really helps bring an app-like experience to the web. I love the new UI pattern that uses `display: flex;` and `overflow: scroll` to to simply allow items that don't fit in a container to become, allowing the user to scroll horizontally when with their thumb or mouse-wheel to access the hidden items. I think this makes so much more sense than completely changing the interface for a user between desktop and mobile devices. It's also much easier to implement for developers, and much more performant at a time when we're all obsessing over technical SEO. Scroll snap arrived just in time to make this style of UI feel smoother and more native, and I try to use it wherever I can.  
 
 <div class="article__embed-wrapper">
     <p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="oNwLWJm" data-user="zackshave" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
