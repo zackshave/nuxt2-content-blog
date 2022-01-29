@@ -1,15 +1,19 @@
 <template>
   <header>
-    <nav>
-      <h1 v-if="$route.path === '/'" class="logo unicode-title">
-        <span class="visually-hidden">Welcome to zackshave.dev</span>
-      </h1>
-      <NuxtLink v-else to="/" class="logo unicode-title"><span class="visually-hidden">Home</span></NuxtLink>
-    </nav>
+    <h1 v-if="$route.path === '/'" class="logo unicode-title">
+      <span class="visually-hidden">Welcome to zackshave.dev</span>
+    </h1>
+    <NuxtLink v-else to="/" class="logo unicode-title"><span class="visually-hidden">Home</span></NuxtLink>
+    <TheMainMenu />
   </header>
 </template>
 
 <style scoped lang="scss">
+  header {
+    margin-bottom: 24px;
+    position: relative;
+  }
+
   h1 {
     font-family: unset;
   }
@@ -29,7 +33,7 @@
   .logo {
     color: var(---text);
     display: inline-block;
-    margin-bottom: 32px;
+    margin-bottom: 0;
     transition: color 0.25s ease;
   }  
 
