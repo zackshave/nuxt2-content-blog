@@ -15,33 +15,34 @@
   details {
 
     summary {
+      align-items: center;
       cursor: pointer;
+      display: flex;
       height: 30px;
+      justify-content: center;
       list-style: none;
       position: absolute;
       right: 0;
+      text-align: center;
       top: 15px;
+      transform-origin: 15px 15px;
+      transition: transform 0.2s ease;
       width: 30px;
 
-      @media screen and (min-width: 400px) {
-        top: 30px
+      @media screen and (min-width: 600px) {
+        height: 35px;
+        top: 30px;
+        width: 35px;
       }
       
       &.menu-icon {
         &::before {
           content: "☰";
-          align-items: center;
           color: var(---text);
-          display: flex;
-          font-size: clamp(1.75rem, -0.875rem + 4.333vw, 2rem);
-          height: 30px;
-          justify-content: center;
+          font-size: clamp(1.25rem, -0.875rem + 4.333vw, 1.5rem);
           line-height: 1;
-          padding-bottom: 8px;
+          padding: 0 0 5px 0;
           text-align: center;
-          transform-origin: 15px 15px;
-          transition: transform 0.2s ease;
-          width: 30px;
         }
       }
     }
@@ -51,9 +52,12 @@
     }
 
     &[open] {
-      summary::before {
-        content: "☲";
-        transform: rotate(40deg);
+      summary {
+        transform: rotate(45deg);
+
+        &::before {
+          content: "☲";
+        }
       }
     }
 
