@@ -64,7 +64,7 @@ export default {
   // nuxt/image settings
   image: {
     cloudinary: {
-      baseURL: 'https://res.cloudinary.com/dnoqswixj/image/upload/v1638286218/zackshave.dev/'
+      baseURL: 'https://res.cloudinary.com/zackshave/image/upload/v1638286218/zackshave.dev/'
     }
   },
 
